@@ -43,6 +43,23 @@ namespace Dental_Clinic
             patienList.Show();
         }
 
+        private void btnAppointment_Click(object sender, EventArgs e)
+        {
+
+            Consultation consultationForm = new Consultation();
+            consultationForm.MdiParent = this;
+            consultationForm.StartPosition = FormStartPosition.Manual;
+            consultationForm.Location = new Point(150, 0);
+            consultationForm.Show();
+        }
+
+        private void btnSummary_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
       
         
         
