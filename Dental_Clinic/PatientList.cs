@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace Dental_Clinic
 {
-    public partial class SelectClient : Form
+    public partial class PatientList : Form
     {
-        public SelectClient()
+        public PatientList()
         {
             InitializeComponent();
         }
 
-        private void btn_cancel_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+       
     }
 }

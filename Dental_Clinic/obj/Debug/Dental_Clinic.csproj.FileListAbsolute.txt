@@ -8,7 +8,4 @@ C:\Users\Jared\Desktop\C#\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.Pr
 C:\Users\Jared\Desktop\C#\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.csproj.GenerateResource.Cache
 C:\Users\Jared\Desktop\C#\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.exe
 C:\Users\Jared\Desktop\C#\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.pdb
-C:\Users\Jared\Desktop\C#\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.NewClient.resources
-C:\Users\Jared\Desktop\C#\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.SelectClient.resources
-C:\Users\Jared\Desktop\C#\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.Appointment.resources
-C:\Users\Jared\Desktop\C#\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.Services.resources
+C:\Users\Jared\Desktop\C#\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.PatientList.resources

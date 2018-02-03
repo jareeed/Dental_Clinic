@@ -29,39 +29,22 @@
         private void InitializeComponent()
         {
             this.menuPanel = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.menuPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuPanel
             // 
             this.menuPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.menuPanel.Controls.Add(this.button5);
             this.menuPanel.Controls.Add(this.button4);
             this.menuPanel.Controls.Add(this.button3);
             this.menuPanel.Controls.Add(this.button2);
-            this.menuPanel.Controls.Add(this.button1);
             this.menuPanel.Location = new System.Drawing.Point(1, 2);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(46, 615);
+            this.menuPanel.Size = new System.Drawing.Size(150, 708);
             this.menuPanel.TabIndex = 1;
-            this.menuPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.menuPanel_Paint);
-            // 
-            // button5
-            // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button5.Image = global::Dental_Clinic.Properties.Resources.services;
-            this.button5.Location = new System.Drawing.Point(0, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(32, 29);
-            this.button5.TabIndex = 5;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -77,8 +60,6 @@
             this.button4.Text = "Services";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            this.button4.MouseHover += new System.EventHandler(this.button4_MouseHover);
             // 
             // button3
             // 
@@ -94,8 +75,6 @@
             this.button3.Text = "Appointment";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            this.button3.MouseHover += new System.EventHandler(this.button3_MouseHover);
             // 
             // button2
             // 
@@ -108,24 +87,10 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(139, 47);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Client";
+            this.button2.Text = "Patient List";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
-            this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button1.Image = global::Dental_Clinic.Properties.Resources.services;
-            this.button1.Location = new System.Drawing.Point(115, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(32, 29);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Container
             // 
@@ -150,7 +115,5 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
     }
 }
