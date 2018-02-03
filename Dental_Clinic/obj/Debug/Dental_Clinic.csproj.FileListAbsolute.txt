@@ -9,3 +9,15 @@ C:\Users\Jared\Desktop\C#\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.cs
 C:\Users\Jared\Desktop\C#\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.exe
 C:\Users\Jared\Desktop\C#\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.pdb
 C:\Users\Jared\Desktop\C#\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.PatientList.resources
+C:\Users\Rigel Kent\Documents\GitHub\Dental_Clinic\Dental_Clinic\bin\Debug\Dental_Clinic.exe.config
+C:\Users\Rigel Kent\Documents\GitHub\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.exe
+C:\Users\Rigel Kent\Documents\GitHub\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.pdb
+C:\Users\Rigel Kent\Documents\GitHub\Dental_Clinic\Dental_Clinic\bin\Debug\Dental_Clinic.exe
+C:\Users\Rigel Kent\Documents\GitHub\Dental_Clinic\Dental_Clinic\bin\Debug\Dental_Clinic.pdb
+C:\Users\Rigel Kent\Documents\GitHub\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.csprojResolveAssemblyReference.cache
+C:\Users\Rigel Kent\Documents\GitHub\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.Container.resources
+C:\Users\Rigel Kent\Documents\GitHub\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.Form1.resources
+C:\Users\Rigel Kent\Documents\GitHub\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.PatientList.resources
+C:\Users\Rigel Kent\Documents\GitHub\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.Properties.Resources.resources
+C:\Users\Rigel Kent\Documents\GitHub\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.csproj.GenerateResource.Cache
+C:\Users\Rigel Kent\Documents\GitHub\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.Consultation.resources

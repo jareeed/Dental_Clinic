@@ -30,20 +30,23 @@
         {
             this.menuPanel = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAppointment = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnSummary = new System.Windows.Forms.Button();
             this.menuPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuPanel
             // 
             this.menuPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.menuPanel.Controls.Add(this.btnSummary);
             this.menuPanel.Controls.Add(this.button4);
-            this.menuPanel.Controls.Add(this.button3);
+            this.menuPanel.Controls.Add(this.btnAppointment);
             this.menuPanel.Controls.Add(this.button2);
             this.menuPanel.Location = new System.Drawing.Point(1, 2);
+            this.menuPanel.Margin = new System.Windows.Forms.Padding(4);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(150, 708);
+            this.menuPanel.Size = new System.Drawing.Size(200, 871);
             this.menuPanel.TabIndex = 1;
             // 
             // button4
@@ -53,28 +56,31 @@
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button4.Image = global::Dental_Clinic.Properties.Resources.services;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(2, 267);
+            this.button4.Location = new System.Drawing.Point(0, 432);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(139, 47);
+            this.button4.Size = new System.Drawing.Size(185, 58);
             this.button4.TabIndex = 3;
             this.button4.Text = "Services";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnAppointment
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button3.Image = global::Dental_Clinic.Properties.Resources.appointment2;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(2, 214);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(139, 47);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Appointment";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnAppointment.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAppointment.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnAppointment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnAppointment.Image = global::Dental_Clinic.Properties.Resources.appointment2;
+            this.btnAppointment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAppointment.Location = new System.Drawing.Point(3, 263);
+            this.btnAppointment.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAppointment.Name = "btnAppointment";
+            this.btnAppointment.Size = new System.Drawing.Size(185, 58);
+            this.btnAppointment.TabIndex = 2;
+            this.btnAppointment.Text = "Appointment";
+            this.btnAppointment.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAppointment.UseVisualStyleBackColor = false;
+            this.btnAppointment.Click += new System.EventHandler(this.btnAppointment_Click);
             // 
             // button2
             // 
@@ -83,22 +89,41 @@
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button2.Image = global::Dental_Clinic.Properties.Resources.client;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(2, 161);
+            this.button2.Location = new System.Drawing.Point(3, 198);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(139, 47);
+            this.button2.Size = new System.Drawing.Size(185, 58);
             this.button2.TabIndex = 1;
             this.button2.Text = "Patient List";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnSummary
+            // 
+            this.btnSummary.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSummary.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnSummary.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSummary.Image = global::Dental_Clinic.Properties.Resources.services;
+            this.btnSummary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSummary.Location = new System.Drawing.Point(3, 329);
+            this.btnSummary.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSummary.Name = "btnSummary";
+            this.btnSummary.Size = new System.Drawing.Size(185, 58);
+            this.btnSummary.TabIndex = 4;
+            this.btnSummary.Text = "Summary of charges";
+            this.btnSummary.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSummary.UseVisualStyleBackColor = false;
+            this.btnSummary.Click += new System.EventHandler(this.btnSummary_Click);
+            // 
             // Container
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 711);
+            this.ClientSize = new System.Drawing.Size(1800, 875);
             this.Controls.Add(this.menuPanel);
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Container";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Container";
@@ -113,7 +138,8 @@
 
         private System.Windows.Forms.Panel menuPanel;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAppointment;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSummary;
     }
 }

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consultation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultation.Designer.cs">
+      <DependentUpon>Consultation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Container.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SummaryOfCharges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SummaryOfCharges.Designer.cs">
+      <DependentUpon>SummaryOfCharges.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Consultation.resx">
+      <DependentUpon>Consultation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Container.resx">
       <DependentUpon>Container.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +100,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SummaryOfCharges.resx">
+      <DependentUpon>SummaryOfCharges.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
