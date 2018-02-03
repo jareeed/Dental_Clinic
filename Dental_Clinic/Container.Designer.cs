@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.menuPanel = new System.Windows.Forms.Panel();
+            this.labelWelcome = new System.Windows.Forms.Label();
+            this.labelUsername = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnSummary = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btnAppointment = new System.Windows.Forms.Button();
@@ -39,6 +42,9 @@
             // menuPanel
             // 
             this.menuPanel.BackColor = System.Drawing.Color.White;
+            this.menuPanel.Controls.Add(this.button1);
+            this.menuPanel.Controls.Add(this.labelUsername);
+            this.menuPanel.Controls.Add(this.labelWelcome);
             this.menuPanel.Controls.Add(this.btnSummary);
             this.menuPanel.Controls.Add(this.button4);
             this.menuPanel.Controls.Add(this.btnAppointment);
@@ -47,6 +53,35 @@
             this.menuPanel.Name = "menuPanel";
             this.menuPanel.Size = new System.Drawing.Size(150, 708);
             this.menuPanel.TabIndex = 1;
+            // 
+            // labelWelcome
+            // 
+            this.labelWelcome.AutoSize = true;
+            this.labelWelcome.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWelcome.Location = new System.Drawing.Point(3, 7);
+            this.labelWelcome.Name = "labelWelcome";
+            this.labelWelcome.Size = new System.Drawing.Size(57, 13);
+            this.labelWelcome.TabIndex = 5;
+            this.labelWelcome.Text = "Welcome, ";
+            // 
+            // labelUsername
+            // 
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.Font = new System.Drawing.Font("Calibri", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsername.Location = new System.Drawing.Point(57, 7);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(52, 13);
+            this.labelUsername.TabIndex = 6;
+            this.labelUsername.Text = "username";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 624);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Log Out";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // btnSummary
             // 
@@ -59,7 +94,7 @@
             this.btnSummary.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.btnSummary.Image = global::Dental_Clinic.Properties.Resources.services;
             this.btnSummary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSummary.Location = new System.Drawing.Point(3, 268);
+            this.btnSummary.Location = new System.Drawing.Point(3, 307);
             this.btnSummary.Name = "btnSummary";
             this.btnSummary.Size = new System.Drawing.Size(144, 47);
             this.btnSummary.TabIndex = 4;
@@ -79,7 +114,7 @@
             this.button4.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.button4.Image = global::Dental_Clinic.Properties.Resources.services;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(3, 351);
+            this.button4.Location = new System.Drawing.Point(3, 390);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(144, 47);
             this.button4.TabIndex = 3;
@@ -99,7 +134,7 @@
             this.btnAppointment.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.btnAppointment.Image = global::Dental_Clinic.Properties.Resources.appointment2;
             this.btnAppointment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAppointment.Location = new System.Drawing.Point(3, 215);
+            this.btnAppointment.Location = new System.Drawing.Point(3, 254);
             this.btnAppointment.Name = "btnAppointment";
             this.btnAppointment.Size = new System.Drawing.Size(144, 47);
             this.btnAppointment.TabIndex = 2;
@@ -121,7 +156,7 @@
             this.button2.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.button2.Image = global::Dental_Clinic.Properties.Resources.client;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(3, 162);
+            this.button2.Location = new System.Drawing.Point(3, 201);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(144, 47);
             this.button2.TabIndex = 1;
@@ -134,6 +169,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.menuPanel);
             this.IsMdiContainer = true;
@@ -143,6 +179,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Container_FormClosed);
             this.Load += new System.EventHandler(this.Container_Load);
             this.menuPanel.ResumeLayout(false);
+            this.menuPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -154,5 +191,8 @@
         private System.Windows.Forms.Button btnAppointment;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnSummary;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label labelUsername;
+        private System.Windows.Forms.Label labelWelcome;
     }
 }
