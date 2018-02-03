@@ -29,16 +29,12 @@
         private void InitializeComponent()
         {
             this.menuPanel = new System.Windows.Forms.Panel();
-            this.clientPanel = new System.Windows.Forms.Panel();
-            this.selectClient = new System.Windows.Forms.Button();
-            this.addClient = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.menuPanel.SuspendLayout();
-            this.clientPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuPanel
@@ -51,38 +47,9 @@
             this.menuPanel.Controls.Add(this.button1);
             this.menuPanel.Location = new System.Drawing.Point(1, 2);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(46, 481);
+            this.menuPanel.Size = new System.Drawing.Size(46, 615);
             this.menuPanel.TabIndex = 1;
-            // 
-            // clientPanel
-            // 
-            this.clientPanel.Controls.Add(this.selectClient);
-            this.clientPanel.Controls.Add(this.addClient);
-            this.clientPanel.Location = new System.Drawing.Point(148, 163);
-            this.clientPanel.Name = "clientPanel";
-            this.clientPanel.Size = new System.Drawing.Size(177, 47);
-            this.clientPanel.TabIndex = 3;
-            this.clientPanel.Visible = false;
-            // 
-            // selectClient
-            // 
-            this.selectClient.Location = new System.Drawing.Point(93, 12);
-            this.selectClient.Name = "selectClient";
-            this.selectClient.Size = new System.Drawing.Size(75, 23);
-            this.selectClient.TabIndex = 1;
-            this.selectClient.Text = "Select Client";
-            this.selectClient.UseVisualStyleBackColor = true;
-            this.selectClient.Click += new System.EventHandler(this.selectClient_Click);
-            // 
-            // addClient
-            // 
-            this.addClient.Location = new System.Drawing.Point(9, 12);
-            this.addClient.Name = "addClient";
-            this.addClient.Size = new System.Drawing.Size(75, 23);
-            this.addClient.TabIndex = 0;
-            this.addClient.Text = "New Client";
-            this.addClient.UseVisualStyleBackColor = true;
-            this.addClient.Click += new System.EventHandler(this.addClient_Click);
+            this.menuPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.menuPanel_Paint);
             // 
             // button5
             // 
@@ -164,8 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(853, 485);
-            this.Controls.Add(this.clientPanel);
+            this.ClientSize = new System.Drawing.Size(1350, 711);
             this.Controls.Add(this.menuPanel);
             this.IsMdiContainer = true;
             this.Name = "Container";
@@ -174,7 +140,6 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Container_FormClosed);
             this.Load += new System.EventHandler(this.Container_Load);
             this.menuPanel.ResumeLayout(false);
-            this.clientPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -186,9 +151,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel clientPanel;
-        private System.Windows.Forms.Button selectClient;
-        private System.Windows.Forms.Button addClient;
         private System.Windows.Forms.Button button5;
     }
 }

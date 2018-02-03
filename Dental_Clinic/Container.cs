@@ -25,27 +25,27 @@ namespace Dental_Clinic
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (menuPanel.Height == 481 && menuPanel.Width == 150)
+            if (menuPanel.Height == 615 && menuPanel.Width == 150)
             {
 
-                menuPanel.Height = 481;
+                menuPanel.Height = 615;
                 menuPanel.Width = 46;
-                clientPanel.Visible = false;
+               
                 button5.Visible = true;
             }
             else
             {
-                menuPanel.Height = 481;
+                menuPanel.Height = 615;
                 menuPanel.Width = 150;
             }
         }
 
         private void button2_MouseHover(object sender, EventArgs e)
         {
-            if (menuPanel.Height == 481 && menuPanel.Width == 46)
+            if (menuPanel.Height == 615 && menuPanel.Width == 46)
             {
 
-                menuPanel.Height = 481;
+                menuPanel.Height = 615;
                 menuPanel.Width = 150;
                 button5.Visible = false;
             }
@@ -55,10 +55,10 @@ namespace Dental_Clinic
 
         private void button3_MouseHover(object sender, EventArgs e)
         {
-            if (menuPanel.Height == 481 && menuPanel.Width == 46)
+            if (menuPanel.Height == 615 && menuPanel.Width == 46)
             {
 
-                menuPanel.Height = 481;
+                menuPanel.Height = 615;
                 menuPanel.Width = 150;
                 button5.Visible = false;
             }
@@ -66,10 +66,10 @@ namespace Dental_Clinic
 
         private void button4_MouseHover(object sender, EventArgs e)
         {
-            if (menuPanel.Height == 481 && menuPanel.Width == 46)
+            if (menuPanel.Height == 615 && menuPanel.Width == 46)
             {
 
-                menuPanel.Height = 481;
+                menuPanel.Height = 615;
                 menuPanel.Width = 150;
                 button5.Visible = false;
             }
@@ -82,10 +82,10 @@ namespace Dental_Clinic
 
         private void button2_Click(object sender, EventArgs e)
         {
-
-            if (menuPanel.Height == 481 && menuPanel.Width == 150)
+           
+            if (menuPanel.Height == 615 && menuPanel.Width == 150)
             {
-                clientPanel.Visible = true;
+                
                 
             }
 
@@ -100,14 +100,14 @@ namespace Dental_Clinic
                 ActiveMdiChild.Close();
 
                 NewClient newClient = new NewClient();
-                clientPanel.Visible = false;
+               
                 newClient.MdiParent = this;
                 newClient.Show();
             }
             catch
             {
                 NewClient newClient = new NewClient();
-                clientPanel.Visible = false;
+                
                 newClient.MdiParent = this;
                 newClient.Show();
             }
@@ -125,14 +125,14 @@ namespace Dental_Clinic
                 ActiveMdiChild.Close();
 
                 SelectClient selectClient = new SelectClient();
-                clientPanel.Visible = false;
+                
                 selectClient.MdiParent = this;
                 selectClient.Show();
             }
             catch
             {
                 SelectClient selectClient = new SelectClient();
-                clientPanel.Visible = false;
+               
                 selectClient.MdiParent = this;
                 selectClient.Show();
             }
@@ -140,10 +140,10 @@ namespace Dental_Clinic
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (menuPanel.Height == 481 && menuPanel.Width == 46)
+            if (menuPanel.Height == 615 && menuPanel.Width == 46)
             {
 
-                menuPanel.Height = 481;
+                menuPanel.Height = 615;
                 menuPanel.Width = 150;
 
                 button5.Visible = false;
@@ -157,14 +157,14 @@ namespace Dental_Clinic
                 ActiveMdiChild.Close();
 
                 Appointment appointment = new Appointment();
-                clientPanel.Visible = false;
+               
                 appointment.MdiParent = this;
                 appointment.Show();
             }
             catch
             {
                 Appointment appointment = new Appointment();
-                clientPanel.Visible = false;
+               
                 appointment.MdiParent = this;
                 appointment.Show();
             }
@@ -178,7 +178,7 @@ namespace Dental_Clinic
                 ActiveMdiChild.Close();
 
                 Services services = new Services();
-                clientPanel.Visible = false;
+                
                 services.MdiParent = this;
                 services.Show();
             }
@@ -186,10 +186,15 @@ namespace Dental_Clinic
 
 
                 Services services = new Services();
-                clientPanel.Visible = false;
+               
                 services.MdiParent = this;
                 services.Show();
             }
+        }
+
+        private void menuPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
       
