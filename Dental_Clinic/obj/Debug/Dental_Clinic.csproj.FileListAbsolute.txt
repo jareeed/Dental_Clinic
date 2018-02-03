@@ -11,3 +11,6 @@ C:\Users\Jared\Desktop\C#\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.Pa
 C:\Users\Jared\Desktop\C#\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.NewPatient.resources
 C:\Users\Jared\Desktop\C#\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.Consultation.resources
 C:\Users\Jared\Desktop\C#\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.SummaryOfCharges.resources
+C:\Users\Lenovo\Desktop\Dental Clinic\Dental_Clinic\Dental_Clinic\bin\Debug\Dental_Clinic.exe.config
+C:\Users\Lenovo\Desktop\Dental Clinic\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.exe
+C:\Users\Lenovo\Desktop\Dental Clinic\Dental_Clinic\Dental_Clinic\obj\Debug\Dental_Clinic.pdb
