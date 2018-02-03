@@ -58,11 +58,11 @@
     <Compile Include="Container.Designer.cs">
       <DependentUpon>Container.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="NewPatient.cs">
       <SubType>Form</SubType>
@@ -90,8 +90,8 @@
     <EmbeddedResource Include="Container.resx">
       <DependentUpon>Container.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewPatient.resx">
       <DependentUpon>NewPatient.cs</DependentUpon>
@@ -139,6 +139,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\services.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_patients.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_appointment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_patients1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_appointment1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_summary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_services.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

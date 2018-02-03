@@ -36,14 +36,13 @@ namespace Dental_Clinic
         {
             try
             {
-               
-
                 NewPatient newPatient = new NewPatient();
-                newPatient.MdiParent = this.ParentForm;
-                newPatient.StartPosition = FormStartPosition.Manual;
-                newPatient.Location = new Point(180, 150);
-                newPatient.Show();
-                this.Close();
+                //newPatient.MdiParent = this.ParentForm;
+                //newPatient.StartPosition = FormStartPosition.Manual;
+                //newPatient.Location = new Point(180, 150);
+                //newPatient.Show();
+                //this.Close();
+                newPatient.ShowDialog();
             }
             catch
             {
