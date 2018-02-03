@@ -35,25 +35,53 @@ namespace Dental_Clinic
 
         private void button2_Click(object sender, EventArgs e)
         {
-
-            PatientList patienList = new PatientList();
-            patienList.MdiParent = this;
-            patienList.StartPosition = FormStartPosition.Manual;
-            patienList.Location = new Point(150, 0);
-            patienList.Show();
+            try
+            {
+                ActiveMdiChild.Close();
+                PatientList patienList = new PatientList();
+                patienList.MdiParent = this;
+                patienList.StartPosition = FormStartPosition.Manual;
+                patienList.Location = new Point(150, 0);
+                patienList.Show();
+            }
+            catch
+            {
+                PatientList patienList = new PatientList();
+                patienList.MdiParent = this;
+                patienList.StartPosition = FormStartPosition.Manual;
+                patienList.Location = new Point(150, 0);
+                patienList.Show();
+            }
         }
 
         private void btnAppointment_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ActiveMdiChild.Close();
+                Consultation consultationForm = new Consultation();
+                consultationForm.MdiParent = this;
+                consultationForm.StartPosition = FormStartPosition.Manual;
+                consultationForm.Location = new Point(150, 0);
+                consultationForm.Show();
+            }
+            catch
+            {
+                Consultation consultationForm = new Consultation();
+                consultationForm.MdiParent = this;
+                consultationForm.StartPosition = FormStartPosition.Manual;
+                consultationForm.Location = new Point(150, 0);
+                consultationForm.Show();
 
-            Consultation consultationForm = new Consultation();
-            consultationForm.MdiParent = this;
-            consultationForm.StartPosition = FormStartPosition.Manual;
-            consultationForm.Location = new Point(150, 0);
-            consultationForm.Show();
+            }
         }
 
         private void btnSummary_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
         {
 
         }

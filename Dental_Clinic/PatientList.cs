@@ -34,12 +34,25 @@ namespace Dental_Clinic
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            ActivateMdiChild.Close();
-            NewPatient newPatient = new NewPatient();
-            newPatient.MdiParent = this.ParentForm;
-            newPatient.StartPosition = FormStartPosition.Manual;
-            newPatient.Location = new Point(180, 150);
-            newPatient.Show();
+            try
+            {
+               
+
+                NewPatient newPatient = new NewPatient();
+                newPatient.MdiParent = this.ParentForm;
+                newPatient.StartPosition = FormStartPosition.Manual;
+                newPatient.Location = new Point(180, 150);
+                newPatient.Show();
+                this.Close();
+            }
+            catch
+            {
+                NewPatient newPatient = new NewPatient();
+                newPatient.MdiParent = this.ParentForm;
+                newPatient.StartPosition = FormStartPosition.Manual;
+                newPatient.Location = new Point(180, 150);
+                newPatient.Show();
+            }
         }
 
         private void Retrieve()

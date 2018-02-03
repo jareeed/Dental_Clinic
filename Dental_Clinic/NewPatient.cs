@@ -53,10 +53,11 @@ namespace Dental_Clinic
                     MessageBox.Show("Added...");
                     conn.Close();
 
-                    PatientList patientList = new PatientList();
-                    
-                 
-                    patientList.Show();
+                    PatientList patienList = new PatientList();
+                   
+                    patienList.StartPosition = FormStartPosition.Manual;
+                    patienList.Location = new Point(150, 0);
+                    patienList.Show();
 
                     this.Close();
                 }
