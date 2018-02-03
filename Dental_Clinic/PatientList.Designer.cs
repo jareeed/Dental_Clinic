@@ -46,7 +46,7 @@
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.rectangleShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(1200, 700);
+            this.shapeContainer1.Size = new System.Drawing.Size(1190, 690);
             this.shapeContainer1.TabIndex = 0;
             this.shapeContainer1.TabStop = false;
             // 
@@ -81,9 +81,12 @@
             this.btnNew.TabIndex = 3;
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = false;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // patientData
             // 
+            this.patientData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.patientData.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.patientData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.patientData.Location = new System.Drawing.Point(12, 97);
             this.patientData.Name = "patientData";
@@ -121,7 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 700);
+            this.ClientSize = new System.Drawing.Size(1190, 690);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.patientData);
@@ -133,6 +136,7 @@
             this.Name = "PatientList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "PatientList";
+            this.Load += new System.EventHandler(this.PatientList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.patientData)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
