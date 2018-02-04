@@ -54,7 +54,7 @@ namespace Dental_Clinic
                     conn.Close();
 
                     PatientList patienList = new PatientList();
-                   
+                    patienList.MdiParent = this.ParentForm;
                     patienList.StartPosition = FormStartPosition.Manual;
                     patienList.Location = new Point(150, 0);
                     patienList.Show();

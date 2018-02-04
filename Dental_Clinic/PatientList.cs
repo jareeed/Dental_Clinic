@@ -77,6 +77,32 @@ namespace Dental_Clinic
         private void PatientList_Load(object sender, EventArgs e)
         {
             Retrieve();
+
+                    
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string commandString = "select * from patient where fname like '%" + txtSearch.Text + "%' OR lname like '%"
+                   + txtSearch.Text + "%' order by ID ASC";
+
+
+                OleDbDataAdapter dataAdapter = new OleDbDataAdapter(commandString, conn);
+                DataSet ds = new DataSet();
+                dataAdapter.Fill(ds, "prog");
+
+                DataTable dataTableq = ds.Tables["prog"];
+                currRec = 0;
+                totalRec = dataTableq.Rows.Count;
+
+                patientData.DataSource = dataTableq;
+
+            }
+            catch
+            {
+            }
         }
 
        
