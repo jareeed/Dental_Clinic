@@ -58,7 +58,7 @@ namespace Dental_Clinic
         {
             DataSet ds = new DataSet();
 
-            string commandString = "SELECT fname,lname,minitial,address,contact,birthday,gender,civilstatus from patient order by ID ASC";
+            string commandString = "SELECT fname,lname,mid_initial,address,contact,birthday,gender,civil_status from patients order by ID ASC";
 
             OleDbDataAdapter dataAdapter = new OleDbDataAdapter(commandString, conn);
 

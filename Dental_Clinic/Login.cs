@@ -43,11 +43,11 @@ namespace Dental_Clinic
                 MessageBox.Show("Must fill in required fields!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             else
             {
-                string searchString = "SELECT * FROM tblStaff WHERE StaffID = '" + userName + "' AND Password = '" + userPassword + "'";
+                string searchString = "SELECT * FROM users WHERE username = '" + userName + "' AND password = '" + userPassword + "'";
 
                 OleDbDataAdapter searchAdapter = new OleDbDataAdapter(searchString, conn);
 
-                searchAdapter.Fill(ds, "dtResult");
+                searchAdapter.Fill(ds,"dtResult");
                 dataTable = ds.Tables["dtResult"];
 
                 int totalRec = dataTable.Rows.Count;
@@ -61,7 +61,7 @@ namespace Dental_Clinic
                     container.ShowDialog();
                 }
                 else
-                    MessageBox.Show("Invalid Username/Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Either username or password is invalid. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
