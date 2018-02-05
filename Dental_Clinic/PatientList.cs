@@ -76,8 +76,6 @@ namespace Dental_Clinic
         private void PatientList_Load(object sender, EventArgs e)
         {
             Retrieve();
-
-                    
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
@@ -103,6 +101,8 @@ namespace Dental_Clinic
             {
             }
         }
+
+     
 
        
     }

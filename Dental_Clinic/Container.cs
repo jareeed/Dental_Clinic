@@ -22,12 +22,6 @@ namespace Dental_Clinic
             Application.Exit();
         }
 
-      
-
-      
-
-
-       
         private void Container_Load(object sender, EventArgs e)
         {
            
