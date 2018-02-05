@@ -16,7 +16,6 @@ namespace Dental_Clinic
         DataTable dataTable, dtDoctors;
         int currRec = 0, totalRec = 0, close = 0;
         static string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0; Data Source= diagnostic.accdb";
-        string dateMax = DateTime.Now.ToString();
 
         OleDbConnection conn = new OleDbConnection(connectionString);
 
@@ -29,7 +28,6 @@ namespace Dental_Clinic
         {
             getPatient();
             getDoctor();
-            lblDateNow.Text = dateMax;
         }
 
         private void getPatient()
@@ -56,13 +54,7 @@ namespace Dental_Clinic
 
         private void getServices()
         {
-            string strSql = "SELECT * FROM services";
-            OleDbDataAdapter adapter = new OleDbDataAdapter(new OleDbCommand(strSql, conn));
-            DataSet dsServ = new DataSet();
-            adapter.Fill(dsServ);
-           // clbServices.DataSource = dsServ.Tables[2];
-            //clbServices.DisplayMember = "fullname";
-            //clbServices.ValueMember = "id";
+      
         }
    
     }

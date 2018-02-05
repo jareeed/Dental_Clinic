@@ -30,22 +30,22 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.cboDoctors = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.label6 = new System.Windows.Forms.Label();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -68,13 +68,49 @@
             this.cboDoctors.Size = new System.Drawing.Size(281, 24);
             this.cboDoctors.TabIndex = 1;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 12);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(334, 22);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "Search patient.";
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape2,
+            this.lineShape1});
+            this.shapeContainer1.Size = new System.Drawing.Size(1220, 653);
+            this.shapeContainer1.TabIndex = 15;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 244;
+            this.lineShape1.X2 = 346;
+            this.lineShape1.Y1 = 106;
+            this.lineShape1.Y2 = 106;
+            // 
+            // lineShape2
+            // 
+            this.lineShape2.Name = "lineShape2";
+            this.lineShape2.X1 = 898;
+            this.lineShape2.X2 = 1024;
+            this.lineShape2.Y1 = 107;
+            this.lineShape2.Y2 = 107;
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(1013, 603);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 38);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Save";
+            this.button1.Text = "Payment";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -86,13 +122,23 @@
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // label2
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(334, 22);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "Search patient name here..";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(15, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 17);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Patient Id:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(15, 63);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 17);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Name:";
             // 
             // groupBox1
             // 
@@ -147,15 +193,6 @@
             this.button4.Text = "<<";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 17);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Patient Id:";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -164,15 +201,6 @@
             this.label3.Size = new System.Drawing.Size(96, 17);
             this.label3.TabIndex = 13;
             this.label3.Text = "Total Amount:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 63);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 17);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Name:";
             // 
             // label5
             // 
@@ -183,26 +211,6 @@
             this.label5.TabIndex = 14;
             this.label5.Text = "List of services";
             // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape2,
-            this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(1220, 653);
-            this.shapeContainer1.TabIndex = 15;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape1
-            // 
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 244;
-            this.lineShape1.X2 = 346;
-            this.lineShape1.Y1 = 106;
-            this.lineShape1.Y2 = 106;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -211,14 +219,6 @@
             this.label6.Size = new System.Drawing.Size(124, 17);
             this.label6.TabIndex = 16;
             this.label6.Text = "Services rendered";
-            // 
-            // lineShape2
-            // 
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 898;
-            this.lineShape2.X2 = 1024;
-            this.lineShape2.Y1 = 107;
-            this.lineShape2.Y2 = 107;
             // 
             // Consultation
             // 
@@ -255,21 +255,21 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cboDoctors;
+        private System.Windows.Forms.TextBox textBox1;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private System.Windows.Forms.Label label6;
     }
 }
